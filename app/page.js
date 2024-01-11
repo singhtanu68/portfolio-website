@@ -2,13 +2,14 @@
 // import Head from 'next/head';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import AboutMe from '@/components/AboutMe';
 
 export default function Home() {
+
+ 
   return (
     <div>
-      {/* <Head>
-        <title>Next.js 14 App</title>
-      </Head> */}
+    
       <Header />
       <section
   className="site-hero"
@@ -23,8 +24,11 @@ export default function Home() {
           Hello, I'm <strong className="d-block">Tanu Singh</strong>
         </h1>
         <strong className="d-block text-white text-uppercase letter-spacing">
-          and this is My Rezume
+          Web Developer
         </strong>
+        {/* <p className='text-white'>&lt;&gt;</p> */}
+        <p className='text-white no-space' style={{ margin: 0, padding: 0 }}>&lt;&gt; Front End Developer / Back End Developer &lt;/&gt;</p>
+        {/* <p className='text-white'>&lt;/&gt;</p> */}
       </div>
     </div>
   </div>
@@ -129,48 +133,7 @@ export default function Home() {
   </section>{" "}
   {/* .section */}
   <section className="site-section" id="section-about">
-    <div className="container">
-      <div className="row mb-5 align-items-center">
-        <div className="col-lg-7 pr-lg-5 mb-5 mb-lg-0">
-          <img
-            src="/assets/images/image_x.jpg"
-            alt="Image placeholder"
-            className="img-fluid"
-          />
-        </div>
-        <div className="col-lg-5 pl-lg-5 ml-5">
-          <div className="section-heading">
-            <h2>
-              About <strong>Me</strong>
-            </h2>
-          </div>
-          <p className="lead">
-          Driven and dedicated MEAN stack developer with over 2.5 years of hands-on experience in designing
-and developing scalable web applications. 
-          </p>
-          <p className="mb-5">
-          Proficient in utilizing the MERN (MongoDB, Express.js,
-React, Next, Node.js) stack to deliver robust and efficient solutions. collaborate on innovative projects,
-and continue to enhance my skills in a growth-oriented environment.
-
-          </p>
-          <p>
-            <a
-              href="#section-contact"
-              className="btn btn-primary px-4 py-2 btn-sm smoothscroll"
-            >
-              Hire Me
-            </a>
-            <a href="#" className='button-xyz'>
-              <button className="btn btn-secondary px-4 py-2 btn-sm">
-              Download CV
-              </button>
-              
-            </a>
-          </p>
-        </div>
-      </div>
-    </div>
+  <AboutMe/>
   </section>
   <section className="site-section" id="section-contact">
   <div className="container">
